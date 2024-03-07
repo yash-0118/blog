@@ -3,7 +3,7 @@
         Blog <span class="text-blue-500">App</span> Laravel
     </h1>
 
-    <h2 class="inline-flex mt-2">By Yash Prajapati <img src="../images/lary-head.svg" alt="Head of Lary the mascot"></h2>
+    <h2 class="inline-flex mt-2">By Yash Prajapati <img src="http://127.0.0.1:8000/images/lary-head.svg" alt="Head of Lary the mascot"></h2>
 
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">

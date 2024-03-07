@@ -7,7 +7,7 @@
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 <style>
     html {
-        scroll-behavior: smooth;
+        scroll-behavior: smooth
     }
 </style>
 
@@ -23,7 +23,8 @@
 
                         <div class="flex flex-shrink-0 items-center">
                             <a href="/">
-                                <img class="h-10 w-auto rounded" src="../images/blog.svg" alt="Your Company">
+                                <img class="h-10 w-auto rounded" src="http://127.0.0.1:8000/images/blog.svg
+" alt="Your Company">
                             </a>
                         </div>
 
@@ -33,7 +34,7 @@
                         @auth
                         <x-dropdown>
                             <x-slot name="trigger">
-                                <button class="text-xs font-bold uppercase">Welcome, {{ auth()->user()->username }}!</button>
+                                <button class="text-xs font-bold uppercase text-white">Welcome, {{ auth()->user()->username }}!</button>
                             </x-slot>
 
                             @admin
@@ -49,8 +50,8 @@
 
 
                         @else
-                        <a href="/register" class="text-xs font-bold uppercase {{ request()->is('register') ? 'text-blue-500' : '' }}">Register</a>
-                        <a href="/login" class="ml-6 text-xs font-bold uppercase {{ request()->is('login') ? 'text-blue-500' : '' }}">Log In</a>
+                        <a href="/register" class="text-xs font-bold text-white uppercase {{ request()->is('register') ? 'text-blue-500' : '' }}">Register</a>
+                        <a href="/login" class="ml-6 text-xs font-bold text-white uppercase {{ request()->is('login') ? 'text-blue-500' : '' }}">Log In</a>
 
                         @endauth
 
@@ -65,14 +66,12 @@
 
             </div>
         </nav>
-        <div class="text-red">
-            {{request()->path()}}
-        </div>
+
 
 
         {{$slot}}
 
-        <footer id="newsletter" class=" bg-gray-100 border border-black border-opacity-5 rounded-xl text-center py-16 px-10 mt-16">
+        <!-- <footer id="newsletter" class=" bg-gray-100 border border-black border-opacity-5 rounded-xl text-center py-16 px-10 mt-16">
             <img src="../images/lary-newsletter-icon.svg" alt="" class="mx-auto -mb-6" style="width: 145px;">
             <h5 class="text-3xl">Stay in touch with the latest posts</h5>
             <p class="text-sm mt-3">Promise to keep the inbox clean. No bugs.</p>
@@ -83,7 +82,7 @@
                     <form method="POST" action="#" class="lg:flex text-sm">
                         <div class="lg:py-3 lg:px-5 flex items-center">
                             <label for="email" class="hidden lg:inline-block">
-                                <img src="../images/mailbox-icon.svg" alt="mailbox letter">
+                                <img src="http://127.0.0.1:8000/images/mailbox-icon.svg" alt="mailbox letter">
                             </label>
 
                             <input id="email" type="text" placeholder="Your email address" class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none">
@@ -95,7 +94,7 @@
                     </form>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </section>
     <x-flash />
 </body>
